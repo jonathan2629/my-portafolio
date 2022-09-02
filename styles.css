@@ -7,7 +7,7 @@
 }
 
 html {
-	background-color: #121944;
+	background-color: #1e2761;
 }
 
 /*==============NAVBAR====================*/
@@ -68,25 +68,36 @@ html {
 
 .container_header {
 	display: flex;
-	background-color: white;
+	
 	width: 100%;
 	height: 400px;
 	justify-content: center;
 	align-items: center;
 	margin-top: 55px;
+	flex-direction: column;
 }
 
 .photo{
-	background-image: url(./Logos-\ Imágenes/.photo)
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #34b0be;
+
 }
 
 
 h1 {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	color: #34b0be;
 	align-items: center;
+	justify-content: center;
 	padding: 30px;
+	animation: backInRight;
+	animation-duration: 2s;
+
 }
+
 /*=====================================================*/
 
 
