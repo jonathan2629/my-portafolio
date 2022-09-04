@@ -1,13 +1,21 @@
 * {
 	box-sizing: border-box;
-	font-family: monospace;
 	margin: 0;
 	padding: 0;
+	font-family: 'Alegreya', sans-serif;
+
 }
 
 html {
 	background-color: #242635;
 	margin-inline: 1.5rem;
+	color: white;
+}
+
+:root {
+	--primary-color: #242635;
+	--secuundary-color: #34b0be;
+	--h2-font-size: 1.2rem;
 }
 
 /*==============NAVBAR====================*/
@@ -16,7 +24,7 @@ html {
 	height: 50px;
 	display: flex;
 	position: relative;
-	justify-content: center;
+	justify-content: end;
 	align-items: center;
 	position: sticky;
 	top: 0;
@@ -45,7 +53,7 @@ html {
 }
 
 .navbar_links li:hover {
-	background-color: #34b0be;
+	background-color: var(--secuundary-color);
 	text-decoration: underline;
 }
 
@@ -84,13 +92,16 @@ html {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-color: #34b0be;
+	background-image: url(/íconos/perfil\ 2.jpeg);
+
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 h1 {
 	display: flex;
 	flex-direction: column;
-	color: #34b0be;
+	color: var(--secuundary-color);
 	align-items: center;
 	padding-top: 30px;
 	animation: backInRight;
@@ -112,7 +123,6 @@ h1 :last-child {
 h2 {
 	padding-top: 10px;
 	color: white;
-	
 }
 
 /*=====================================================*/
@@ -125,7 +135,6 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	
 }
 .component_social_media {
 	width: 50px;
@@ -141,7 +150,7 @@ h2 {
 	background-image: url(./íconos/linkedin.svg);
 }
 .facebook {
-	background-image: url(.//íconos/bxl-facebook-circle.svg);
+	background-image: url(/íconos/FC.svg);
 }
 .twiter {
 	background-image: url(./íconos/twitter.svg);
@@ -151,15 +160,15 @@ h2 {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	height: 100px;
-	margin-top: 20px;
+	height: 90px;
+	margin-top: 10px;
 	border-radius: 8px;
-	background-color: #211f5d68;
+	background-color: #54537d68;
 }
 .component_social_media_2 {
 	display: block;
-	width: 80px;
-	height: 50px;
+	width: 60px;
+	height: 40px;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -169,13 +178,42 @@ h2 {
 .google {
 	background-image: url(/íconos/google.svg);
 }
+.twitch {
+	background-image: url(/íconos/bxl-twitch.svg);
+}
+.spotify {
+	background-image: url(/íconos/spotify.svg);
+}
+
+/*================ main==========================*/
+
+.container_title_about_me {
+	width: 100%;
+	height: 170px;
+	margin-top: 50px;
+	padding: 30px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.container_title_about_me h2 {
+	color: var(--secuundary-color);
+}
+
+
+.container_title_about_me span {
+	font-size: var(--h2-font-size);
+
+	padding-top: 30px;
+}
 
 /*============ class generics=============================*/
 
 .hover:hover {
 	background-color: #34b0be;
 }
-/*========================================================*/
+/*=====================   BREACKPOINTS  ===============================*/
 @media (max-width: 500px) {
 	.navbar {
 		flex-direction: column;
