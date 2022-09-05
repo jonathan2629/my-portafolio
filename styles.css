@@ -211,8 +211,14 @@ h2 {
 
 .container_title_about_me span {
 	font-size: var(--h2-font-size);
-
 	padding-top: 30px;
+}
+.icon_academlo {
+	width: 10px;
+	height:20 px;
+	background-image: url(/íconos/logo_academlo\ 2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 /*============ class generics=============================*/
@@ -222,6 +228,7 @@ h2 {
 }
 .underline:hover {
 	text-decoration: underline;
+	color: var(--secuundary-color);
 }
 /*=====================   BREACKPOINTS  ===============================*/
 @media (max-width: 500px) {
