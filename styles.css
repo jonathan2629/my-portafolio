@@ -124,6 +124,13 @@ h2 {
 	padding-top: 10px;
 	color: white;
 }
+.logo_academlo {
+	width: 10px;
+	height: 20px;
+	border-color: aliceblue;
+	color: rgb(184, 77, 77);
+	text-decoration: none;
+}
 
 /*=====================================================*/
 
@@ -210,8 +217,11 @@ h2 {
 
 /*============ class generics=============================*/
 
-.hover:hover {
-	background-color: #34b0be;
+.hover_icons:hover {
+	background-color: var(--secuundary-color);
+}
+.underline:hover {
+	text-decoration: underline;
 }
 /*=====================   BREACKPOINTS  ===============================*/
 @media (max-width: 500px) {
