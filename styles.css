@@ -2,8 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Alegreya', sans-serif;
-
+	font-family: "Montserrat";
 }
 
 html {
@@ -15,20 +14,31 @@ html {
 :root {
 	--primary-color: #242635;
 	--secuundary-color: #34b0be;
+	--third-color: #d1ceca;
+	--fourth-color: #54537d68;
+
 	--h2-font-size: 1.2rem;
 }
 
 /*==============NAVBAR====================*/
 
 .navbar {
-	height: 50px;
+	height: 70px;
 	display: flex;
-	position: relative;
-	justify-content: end;
+
+	justify-content: space-around;
 	align-items: center;
 	position: sticky;
 	top: 0;
+	background-color: var(--primary-color);
 	color: white;
+}
+.my_logo {
+	background-image: url(/íconos/mi\ logo.svg);
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	align-content: center;
 }
 
 .navbar_links {
@@ -37,8 +47,6 @@ html {
 
 .navbar_links ul {
 	display: flex;
-	margin: 0;
-	padding: 0;
 }
 
 .navbar_links li {
@@ -93,7 +101,6 @@ html {
 	height: 200px;
 	border-radius: 50%;
 	background-image: url(/íconos/perfil\ 2.jpeg);
-
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -107,6 +114,7 @@ h1 {
 	animation: backInRight;
 	animation-duration: 2.5s;
 	margin-top: 10px;
+	font-size: 1.5rem;
 }
 h1 :nth-child(1) {
 	color: white;
@@ -118,18 +126,26 @@ h1 :last-child {
 .header_line {
 	width: 350px;
 	height: 1px;
-	background-color: rgb(233, 204, 204);
+	background-color: var(--third-color);
 }
 h2 {
 	padding-top: 10px;
 	color: white;
+	font-size: large;
 }
 .logo_academlo {
 	width: 10px;
 	height: 20px;
-	border-color: aliceblue;
+	border-color: var(--third-color);
 	color: rgb(184, 77, 77);
 	text-decoration: none;
+}
+.icon_academlo {
+	width: 10px;
+	height: 20 px;
+	background-image: url(/íconos/logo_academlo\ 2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 /*=====================================================*/
@@ -138,7 +154,7 @@ h2 {
 .container_social_media {
 	width: 100%;
 	height: 60px;
-	margin-top: 20px;
+	margin-top: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -147,7 +163,7 @@ h2 {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background-color: #d1ceca;
+	background-color: var(--third-color);
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
@@ -170,7 +186,7 @@ h2 {
 	height: 90px;
 	margin-top: 10px;
 	border-radius: 8px;
-	background-color: #54537d68;
+	background-color: #54537d40;
 }
 .component_social_media_2 {
 	display: block;
@@ -179,7 +195,7 @@ h2 {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-color: #d1ceca;
+	background-color: var(--third-color);
 	border-radius: 8px;
 }
 .google {
@@ -192,36 +208,76 @@ h2 {
 	background-image: url(/íconos/spotify.svg);
 }
 
-/*================ main==========================*/
+/*================ ABOUT ME  ==========================*/
 
 .container_title_about_me {
 	width: 100%;
-	height: 170px;
-	margin-top: 50px;
-	padding: 30px 30px;
+	height: 200px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: start;
+}
+.container_title_about_me h2 {
+	color: var(--secuundary-color);
+	margin-top: 5px;
+}
+
+.container_title_about_me span {
+	font-size: var(--h2-font-size);
+	margin-top: 0;
+	padding: 15px;
+}
+
+/*============= SERVICIES ===========================*/
+
+.container_services {
+	width: 100%;
+	height: 700px;
+	margin-top: 32px;
+	background-color: var(--fourth-color);
+	border-radius: 16px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section h2 {
+	color: var(--secuundary-color);
+}
+.card_services {
+	width: 85%;
+	height: 300px;
+	background-color: white;
+	margin-top: 20px;
+	color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	text-align: center;
+	border-radius: 5px;
 }
-.container_title_about_me h2 {
-	color: var(--secuundary-color);
-}
-
-
-.container_title_about_me span {
-	font-size: var(--h2-font-size);
-	padding-top: 30px;
-}
-.icon_academlo {
-	width: 10px;
-	height:20 px;
-	background-image: url(/íconos/logo_academlo\ 2.svg);
-	background-size: contain;
+.icon_ux {
+	width: 30%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	background-image: url(/íconos/pencil.svg);
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+.Logo_figma {
+	background-image: url(/íconos/figma-vector-logo.png);
+	background-position: center;
 }
 
 /*============ class generics=============================*/
+.h2_secundary_color {
+	color: var(--secuundary-color);
+}
 
 .hover_icons:hover {
 	background-color: var(--secuundary-color);
@@ -261,6 +317,12 @@ h2 {
 
 	.navbar_links.active {
 		display: flex;
+	}
+}
+@media (min-width: 575px) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
