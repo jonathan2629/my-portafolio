@@ -14,28 +14,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;1,300&family=Kurale&family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="./íconos/FAVICON.ico" type="image/xx-icon">
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
 <body>
  
-    <nav class="navbar">
-      <a href="#" class="toggle_button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <i class="my_logo" title="logo-jonathan-caceres-rojas"></i>
-      <div class="navbar_links">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <div class="navbar">
+    <div class="navbar__container">
+      <div class="logo_jc"></div>
+      <div id="menu" class="menu">
+        <i class='bx bx-x menu__icon menu--close'></i>
+        <nav class="menu__list">
+          <a class="menu__link" href="#">Home</a>
+          <a class="menu__link" href="#about">About</a>
+          <a class="menu__link" href="#services">Services</a>
+          <a class="menu__link" href="#projects">Projects</a>
+          <a class="menu__link" href="#contact">Contact</a>
+        </nav>
       </div>
+
+      <i class='bx bx-menu menu__icon menu--open'></i>
+    </div>
+  </div>
      
     </nav>
     <header class="container_header">
@@ -64,17 +65,20 @@
         <span>I am currently an Academlo student with knowledge in different technologies. Also excellent team player and a very sociable and friendly person with people.
     </section>
  
-    <section class="container_services"href="services">
+    <section href="services">
       <h2>SERVICES</h2>
-      <div class="card_services">
-        <div class="icon_ux"></div>
-        <h3>UX/UI</h3>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error recusandae. Autem nisi reprehenderit veritatis, voluptates soluta qu</span>
+      <div class="container_cards">
+        <div class="card_services">
+          <div class="icon_ux"></div>
+          <h3>UX/UI</h3>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error recusandae. Autem nisi reprehenderit veritatis, voluptates soluta qu</span>
+        </div>
+        <div class="card_services">
+          <div class="icon_ux Logo_figma"></div>
+          <h3>UX/UI</h3>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error recusandae. Autem nisi reprehenderit veritatis, voluptates soluta qu</span>
       </div>
-      <div class="card_services">
-        <div class="icon_ux Logo_figma"></div>
-        <h3>UX/UI</h3>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error recusandae. Autem nisi reprehenderit veritatis, voluptates soluta qu</span>
+   
   </section>
   
 
