@@ -155,7 +155,7 @@ html {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-image: url(/íconos/perfil\ 2.jpeg);
+	background-image: url(/my-portafolio/íconos/perfil\ 2.jpeg);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -228,7 +228,7 @@ h2 {
 	background-image: url(./íconos/linkedin.svg);
 }
 .facebook {
-	background-image: url(/íconos/FC.svg);
+	background-image: url(/my-portafolio/íconos/FC.svg);
 }
 .twiter {
 	background-image: url(./íconos/twitter.svg);
