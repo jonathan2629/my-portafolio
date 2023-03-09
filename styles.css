@@ -30,7 +30,6 @@ html {
 	box-shadow: 0px 0px 15px -3px #00000042;
 	z-index: 1;
 	transition: all 0.3s ease;
-	
 }
 
 .navbar__container {
@@ -42,7 +41,7 @@ html {
 	margin: 0 auto;
 	height: inherit;
 	justify-content: space-between;
-	
+
 	padding: 20px;
 }
 .logo_jc {
@@ -66,16 +65,19 @@ html {
 .menu__icon {
 	font-size: 28px;
 	background-image: url(/íconos/menu.svg);
+	cursor: pointer;
 }
 
 .menu__list {
 	display: flex;
 	align-items: center;
-	gap: 1.5rem;
+	gap: 2.5rem;
+	
 }
 
 .menu__link {
-	color: var(--third-color);
+	text-decoration: none;
+	color: black;
 	font-weight: 700;
 	transition: 0.2s ea-in-out;
 }
@@ -88,18 +90,19 @@ html {
 @media (max-width: 500px) {
 	.menu {
 		position: fixed;
-		top: -100%;
-		left: 0;
+		left: 500px;
 		width: 100%;
-		background-color: #fff;
+		background-color: var(--third-color);
 		padding: 70px 0 40px;
 		border-radius: 0 0 20px 20px;
 		box-shadow: 0px 0px 15px -3px #00000042;
-		transition: all 0.3s ease;
+		transition: all 1s ease;
 	}
 
 	.menu.show--menu {
-		top: 0;
+		top: 0%;
+		left: 0px;
+		transition: 1s all ease;
 	}
 
 	.menu__list {
@@ -107,12 +110,15 @@ html {
 	}
 
 	.menu--close {
+		color: black;
 		position: absolute;
 		display: inline-block;
 		top: 20px;
 		right: 20px;
-		cursor: pointer;
 	}
+}
+.menu--close:hover {
+	color: var(--secuundary-color);
 }
 
 @media (min-width: 768px) {
@@ -122,6 +128,7 @@ html {
 
 	.menu--close {
 		display: none;
+		
 	}
 
 	.menu__list {
@@ -132,9 +139,11 @@ html {
 
 	.menu--open {
 		display: none;
+		cursor: pointer;
 	}
 	.menu__icon {
 		display: none;
+		cursor: pointer;
 	}
 }
 
@@ -227,9 +236,7 @@ h2 {
 .linkedin {
 	background-image: url(./íconos/linkedin.svg);
 }
-.facebook {
-	background-image: url(/my-portafolio/íconos/FC.svg);
-}
+
 .twiter {
 	background-image: url(./íconos/twitter.svg);
 }
@@ -426,13 +433,12 @@ section h2 {
 	width: 100%;
 	height: 200px;
 	border: solid red 1px;
-	display:flex ;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-
 }
-.container_cards_contact{
+.container_cards_contact {
 	width: 80%;
 	height: 200px;
 	background-color: var(--fourth-color);
@@ -446,20 +452,15 @@ section h2 {
 	flex-wrap: wrap;
 }
 .cards {
-	width: 80px ;
+	width: 80px;
 	height: 80px;
 	border: solid red 1px;
 	background-size: contain;
 	background-repeat: no-repeat;
-
 }
 .image_email {
 	background-image: url(/íconos/mail.svg);
 }
-
-
-
-
 
 /*============ class generics=============================*/
 .h2_secundary_color {
@@ -477,6 +478,9 @@ section h2 {
 /*=====================   BREACKPOINTS  ===============================*/
 
 @media (min-width: 575px) {
+	.menu {
+		cursor: pointer;
+	}
 	.navbar {
 		display: flex;
 		justify-content: space-between;
