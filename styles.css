@@ -6,16 +6,13 @@
 }
 
 html {
-	
 	color: white;
-	
-	
 }
 
 :root {
 	--primary-color: rgb(39, 39, 118);
 	--secuundary-color: blue;
-	--third-color:rgb(39, 39, 118) ;
+	--third-color: rgb(39, 39, 118);
 	--fourth-color: red;
 	--h2-font-size: 1.2rem;
 	--navbar-height: 60px;
@@ -23,10 +20,8 @@ html {
 .container_main {
 	width: 80%;
 	height: 1200px;
-	background:url(https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-	margin:0 auto
-
-
+	background: url(https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+	margin: 0 auto;
 }
 
 /*==============NAVBAR====================*/
@@ -60,9 +55,6 @@ html {
 	background-image: url(/íconos/mi\ logo.svg);
 	width: 30px;
 	height: 30px;
-
-	background-size: contain;
-	background-repeat: no-repeat;
 }
 
 .menu {
@@ -70,6 +62,19 @@ html {
 	background-color: var(--primary-color);
 	margin-right: 20px;
 	z-index: 2;
+}
+.menu__icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	text-align: center;
+	display: flex;
+	justify-items: center;
+	background-color: rgb(70, 52, 171);
+}
+.menu--close {
+	position: absolute;
 }
 
 .menu__list {
@@ -95,11 +100,9 @@ html {
 		width: 100%;
 		height: auto;
 		background-color: black;
-		margin:0 auto
-	
-	
+		margin: 0 auto;
 	}
-	
+
 	.menu {
 		position: fixed;
 		left: 500px;
@@ -122,25 +125,27 @@ html {
 	}
 
 	.menu--close {
-		color: black;
-		position: absolute;
-		display: inline-block;
-		top: 20px;
-		right: 20px;
-		border: solid red 1px;
+		width: 50px;
+		height: 50px;
+
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+
+		top: 30px;
+		right: 30px;
 	}
 }
 .menu--close:hover {
 	color: var(--secuundary-color);
 }
 
-/* @media (min-width: 768px) { */
-	:root {
-		--navbar-height: 80px;
-	}
-
+@media (min-width: 768px) {
 	.menu--close {
 		display: none;
+		right: -1000px;
 	}
 
 	.menu__list {
@@ -157,7 +162,14 @@ html {
 		display: none;
 		cursor: pointer;
 	}
-/* } */
+	.menu__icon,
+	.menu--open {
+		right: 1000px;
+		position: absolute;
+		display: none;
+		border: solid red 1px;
+	}
+}
 
 /*==  HEADER =*/
 
@@ -176,7 +188,7 @@ html {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-image: url(/my-portafolio/íconos/perfil\ 2.jpeg);
+	/* background-image: url(/my-portafolio/íconos/perfil-2\ svg.svg); */
 	background-size: contain;
 	background-repeat: no-repeat;
 }
