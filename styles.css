@@ -6,17 +6,27 @@
 }
 
 html {
-	background-color: #242635;
+	background-color: black;
 	color: white;
+	
+	
 }
 
 :root {
-	--primary-color: #242635;
+	--primary-color: #aaa196;
 	--secuundary-color: #34b0be;
 	--third-color: #d1ceca;
-	--fourth-color: #54537d68;
+	--fourth-color: #aaa196;
 	--h2-font-size: 1.2rem;
 	--navbar-height: 60px;
+}
+.container_main {
+	width: 80%;
+	height: 1200px;
+	background-color: red;
+	margin:0 auto
+
+
 }
 
 /*==============NAVBAR====================*/
@@ -62,17 +72,10 @@ html {
 	z-index: 2;
 }
 
-.menu__icon {
-	font-size: 28px;
-	background-image: url(/íconos/menu.svg);
-	cursor: pointer;
-}
-
 .menu__list {
 	display: flex;
 	align-items: center;
 	gap: 2.5rem;
-	
 }
 
 .menu__link {
@@ -88,6 +91,15 @@ html {
 
 /* hasta los 500, 0 - 500 */
 @media (max-width: 500px) {
+	.container_main {
+		width: 100%;
+		height: auto;
+		background-color: red;
+		margin:0 auto
+	
+	
+	}
+	
 	.menu {
 		position: fixed;
 		left: 500px;
@@ -128,7 +140,6 @@ html {
 
 	.menu--close {
 		display: none;
-		
 	}
 
 	.menu__list {
